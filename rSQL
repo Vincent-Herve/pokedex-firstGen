@@ -1,0 +1,21 @@
+SELECT * FROM pokemon;
+
+SELECT
+pokemon.*,
+pokemon_type.*,
+list_type.id AS type_pokemon
+FROM pokemon
+JOIN pokemon_type
+ON pokemon.numero = pokemon_type.pokemon_numero
+JOIN list_type
+ON pokemon_type.type_id = list_type.id;
+
+SELECT
+list_type.name,
+list_type.color
+FROM pokemon
+JOIN pokemon_type
+ON pokemon.numero = pokemon_type.pokemon_numero
+JOIN list_type
+ON pokemon_type.type_id = list_type.id
+WHERE pokemon.numero = 1;

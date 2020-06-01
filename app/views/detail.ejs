@@ -1,0 +1,43 @@
+<%- include('partials/header.ejs') %>
+<h1 class="main_title_detail">Détail de <%= detail.nom %></h1>
+
+<div id="main_detail">
+    <div>
+       <img src="/public/img/<%= detail.numero %>.png" alt=""> 
+    </div>
+    <div class="description">
+        <h2 class="pokemon_title">#<%= detail.numero %> <%= detail.nom %></h2></a> 
+        <% for (type of typePokemon) { %>
+            <a class="type_detail" href="#" style="background-color: #<%= type.color %>"><%= type.name %></a>
+        <% } %>
+        <h3 class="title_statistique">Statistiques</h3>
+        <div id="container_statistique">
+            <div class="carac_detail">
+                <li>PV</li>
+                <li>Attaque</li>
+                <li>Défense</li>
+                <li>Attaque spé.</li>
+                <li>Défense spé</li>
+                <li>Vitesse</li>
+            </div>
+            <div class="valor_detail">
+                <li><%= detail.pv %></li>
+                <li><%= detail.attaque %></li>
+                <li><%= detail.defense %></li>
+                <li><%= detail.attaque_spe %></li>
+                <li><%= detail.defense_spe %></li>
+                <li><%= detail.vitesse %></li>
+            </div>
+            <div class="jauge_detail">
+                <div class="barre"><span class="barre2" style="width: <%= detail.pv %>px"></span></div>
+                <div class="barre"><span class="barre2" style="width: <%= detail.attaque %>px"></span></div>
+                <div class="barre"><span class="barre2" style="width: <%= detail.defense %>px"></span></div>
+                <div class="barre"><span class="barre2" style="width: <%= detail.attaque_spe %>px"></span></div>
+                <div class="barre"><span class="barre2" style="width: <%= detail.defense_spe %>px"></span></div>
+                <div class="barre"><span class="barre2" style="width: <%= detail.vitesse %>px"></span></div>
+            </div>
+        </div>
+    </div> 
+</div>
+<div class="back_to_list"><a href="/">Revenir à la liste</a></div>
+<%- include('partials/footer.ejs') %>

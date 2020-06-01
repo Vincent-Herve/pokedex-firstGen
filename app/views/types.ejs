@@ -1,0 +1,9 @@
+<%- include('partials/header.ejs') %>
+<h1 class="title_types">Cliquez sur un type pour voir tous les Pokémon de ce type</h1>
+<div id="main_types">
+<% for (type of listTypes) { %>
+    <a class="type_detail" href="/types/<%= type.id %>" style="background-color: #<%= type.color %>"><%= type.name %></a>
+<% } %>
+</div>
+
+<%- include('partials/footer.ejs') %>

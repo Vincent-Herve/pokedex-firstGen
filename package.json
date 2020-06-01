@@ -1,0 +1,31 @@
+{
+  "name": "pokedexpress-vincent-herve",
+  "version": "1.0.0",
+  "description": "Apprentis professeurs Chen, j'ai une requête pour vous ! Je souhaiterais un pokédex tout beau, tout neuf !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Zenith/pokedexpress-Vincent-Herve.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Zenith/pokedexpress-Vincent-Herve/issues"
+  },
+  "homepage": "https://github.com/O-clock-Zenith/pokedexpress-Vincent-Herve#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "path": "^0.12.7",
+    "pg": "^7.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

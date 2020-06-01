@@ -1,0 +1,10 @@
+<%- include('partials/header.ejs') %>
+<div id="container">
+<% for (list of listPokemon) { %>
+    <div class="cardPokemon">
+        <a href="/detail/<%= list.numero %>"><img src="/public/img/<%= list.numero %>.png" alt="">
+        <h2>#<%= list.numero %> <%= list.nom %></h2></a>
+    </div>
+<% } %>
+</div>
+<%- include('partials/footer.ejs') %>
